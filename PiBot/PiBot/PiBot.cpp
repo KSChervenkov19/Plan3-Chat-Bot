@@ -26,6 +26,13 @@ void menu()
     cout << setw(47) << endl << "      Menu   " << endl;
     cout << setw(56) << endl << "----------------------------" << endl;
 
+    cout << "\n\n" << endl;
+
+    cout << setw(54) << "{                      }" << endl;
+    cout << setw(54) << "{       Start(1)       }" << endl;
+    cout << setw(54) << "{                      }" << endl;
+    cout << setw(54) << "{        Exit(0)       }" << endl;
+
     bool check = false;
 
     while (check != true)
@@ -54,6 +61,7 @@ void menu()
 
 int main()
 {
+    system("color 3");
     title();
     menu();
 }
