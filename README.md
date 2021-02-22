@@ -7,5 +7,7 @@
 Участници | Имейли
 -------|------------
 Алексанър Божиков | AABozhikov19@codingburgas.bg
+Васил Младенов | VLMladenov19@codingburgas.bg 
+Калин Червенков | KSChervenkov19@codingburgas.bg
 
 >Задачи по Chat-Bot-a
