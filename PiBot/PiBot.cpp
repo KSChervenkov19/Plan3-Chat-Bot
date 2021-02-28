@@ -3,6 +3,48 @@
 #include <string>
 using namespace std;
 
+void piBot()
+{
+    string question;
+    getline(cin, question);
+
+    if (question == "Hi" || question == "Hello" || question == "Hey")
+    {
+        cout << "Nice to meet you. My name is PiBot!" << endl;
+    }
+    else if (question == "How are you?")
+    {
+        cout << "I'm fine, thank you! How are you?" << endl;
+
+        string mood;
+        getline(cin, mood);
+
+        if (mood == "Good")
+        {
+            cout << "Great!" << endl;
+        }
+        else if (mood == "Not Good")
+        {
+            cout << "Sorry to hear that" << endl;
+        }
+    }
+    else if (question == "What is your favourite colour?")
+    {
+        cout << "My favorite color is metallic gray!" << endl;
+    }
+    else if (question == "What is your favourite TV series?")
+    {
+        cout << "I like 'Mr. Robot'. The title reminds me of my father!" << endl;
+    }
+}
+
+void questions()
+{
+    cout << setw(45) << "1. How are you?" << endl;
+    cout << setw(45 + 18) << "2. What is your favourite colour?" << endl;
+    cout << setw(45 + 21) << "3. What is your favourite TV series?" << endl;
+}
+
 void title()
 {
     //Print out bot's name "PiBot"
@@ -31,31 +73,27 @@ void menu()
     cout << setw(54) << "{                      }" << endl;
     cout << setw(54) << "{       Start(1)       }" << endl;
     cout << setw(54) << "{                      }" << endl;
+    cout << setw(54) << "{     Questions(2)     }" << endl;
+    cout << setw(54) << "{                      }" << endl;
     cout << setw(54) << "{        Exit(0)       }" << endl;
+    cout << setw(54) << "{                      }" << endl;
 
     bool check = false;
+    int input;
 
-    while (check != true)
+    while (!check)
     {
-        int input;
         cout << "\n" << endl;
-        cout << setw(49) << endl << "Enter choice:";
+        cout << setw(49) << endl << "Enter choice: ";
         cin >> input;
         cout << "\n" << endl;
 
-        switch (input)
-        {
-        case 1:
-            cout << "Still in progress" << endl;
-            break;
-        case 2:
-            cout << "Still in progress" << endl;
-            break;
-        case 0:
+        if(input == 1)
+            piBot();
+        if(input == 2)
+            questions();
+        if(input == 0)
             check = true;
-        default:
-            break;
-        }
     }
 }
 
