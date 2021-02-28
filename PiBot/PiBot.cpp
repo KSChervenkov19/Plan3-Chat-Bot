@@ -20,7 +20,7 @@ void title()
     cout << "\\/_/            \\/_________/      \\/_____________/  \\/_________/     \\_\\/          " << endl;
 }
 
-void menu() 
+void menu()
 {
     cout << setw(56) << endl << "----------------------------" << endl;
     cout << setw(47) << endl << "      Menu   " << endl;

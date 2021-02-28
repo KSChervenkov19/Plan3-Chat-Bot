@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{7dd7ce2b-2349-4a8a-ad80-b78dd7431f93}</ProjectGuid>
+    <ProjectGuid>{0cfdd58d-b1b4-48c5-9f0a-ad5aaaaa1f52}</ProjectGuid>
     <RootNamespace>PiBot</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
