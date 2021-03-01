@@ -3,6 +3,8 @@
 #include <string>
 using namespace std;
 
+bool check1 = false;
+
 void piBot()
 {
     string question;
@@ -10,23 +12,11 @@ void piBot()
 
     if (question == "Hi" || question == "Hello" || question == "Hey")
     {
-        cout << "Nice to meet you. My name is PiBot!" << endl;
+        cout << "Helo, It's nice to meet you. My name is PiBot!" << endl;
     }
     else if (question == "How are you?")
     {
-        cout << "I'm fine, thank you! How are you?" << endl;
-
-        string mood;
-        getline(cin, mood);
-
-        if (mood == "Good")
-        {
-            cout << "Great!" << endl;
-        }
-        else if (mood == "Not Good")
-        {
-            cout << "Sorry to hear that" << endl;
-        }
+        cout << "I'm fine, thank you!" << endl;
     }
     else if (question == "What is your favourite colour?")
     {
@@ -36,6 +26,14 @@ void piBot()
     {
         cout << "I like 'Mr. Robot'. The title reminds me of my father!" << endl;
     }
+    else if (question == "What do you like to do usually?" || question == "What do you do usually?" || question == "What do you like to do")
+    {
+        cout << "I like to learn new things." << endl;
+    }
+    else if (question == "exit" || question == "q" || question == "quit")
+    {
+        check1 = true;
+    }
 }
 
 void questions()
@@ -43,6 +41,7 @@ void questions()
     cout << setw(45) << "1. How are you?" << endl;
     cout << setw(45 + 18) << "2. What is your favourite colour?" << endl;
     cout << setw(45 + 21) << "3. What is your favourite TV series?" << endl;
+    cout << setw(45 + 19) << "4. What do you like to do usually?" << endl;
 }
 
 void title()
@@ -88,11 +87,18 @@ void menu()
         cin >> input;
         cout << "\n" << endl;
 
-        if(input == 1)
-            piBot();
-        if(input == 2)
+        if (input == 1)
+        {
+            while(!check1)
+            {
+                piBot();
+            }
+        }
+        else if (input == 2)
+        {
             questions();
-        if(input == 0)
+        }
+        else if(input == 0)
             check = true;
     }
 }
