@@ -10,9 +10,6 @@ Names | Emails
 Васил Младенов | VLMladenov19@codingburgas.bg 
 Калин Червенков | KSChervenkov19@codingburgas.bg
 
-**Main Idea**
----
-
 
 ## Installation
 
